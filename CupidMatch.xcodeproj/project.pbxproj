@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A73B3285207BFD5200EE0E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B3284207BFD5200EE0E6B /* AppDelegate.swift */; };
+		A73B3287207BFD5200EE0E6B /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B3286207BFD5200EE0E6B /* UsersViewController.swift */; };
+		A73B328A207BFD5200EE0E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73B3288207BFD5200EE0E6B /* Main.storyboard */; };
+		A73B328D207BFD5200EE0E6B /* CupidMatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A73B328B207BFD5200EE0E6B /* CupidMatch.xcdatamodeld */; };
+		A73B328F207BFD5200EE0E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73B328E207BFD5200EE0E6B /* Assets.xcassets */; };
+		A73B3292207BFD5200EE0E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73B3290207BFD5200EE0E6B /* LaunchScreen.storyboard */; };
+		A73B329D207BFD5200EE0E6B /* CupidMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B329C207BFD5200EE0E6B /* CupidMatchTests.swift */; };
+		A73B32A8207BFD5200EE0E6B /* CupidMatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32A7207BFD5200EE0E6B /* CupidMatchUITests.swift */; };
+		A73B32BD207C211A00EE0E6B /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32BC207C211900EE0E6B /* UserCollectionViewCell.swift */; };
+		A73B32BF207C24D800EE0E6B /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32BE207C24D800EE0E6B /* Command.swift */; };
+		A73B32C1207C257900EE0E6B /* CommandArgumentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32C0207C257900EE0E6B /* CommandArgumentKey.swift */; };
+		A73B32C3207C259500EE0E6B /* CommandKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32C2207C259500EE0E6B /* CommandKey.swift */; };
+		A73B32C5207C25DF00EE0E6B /* UserCollectionViewCellConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32C4207C25DF00EE0E6B /* UserCollectionViewCellConfigurationCommand.swift */; };
+		A73B32C9207C290500EE0E6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32C8207C290500EE0E6B /* User.swift */; };
+		A73B32CB207C295000EE0E6B /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32CA207C295000EE0E6B /* ProfileImage.swift */; };
+		A73B32CD207C296A00EE0E6B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32CC207C296A00EE0E6B /* Location.swift */; };
+		A73B32CF207C528000EE0E6B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32CE207C528000EE0E6B /* NetworkManager.swift */; };
+		A73B32D1207C7F2900EE0E6B /* CollectionViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32D0207C7F2900EE0E6B /* CollectionViewCellViewModelProtocol.swift */; };
+		A73B32D3207C7F4F00EE0E6B /* CollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32D2207C7F4F00EE0E6B /* CollectionViewCellViewModel.swift */; };
+		A73B32D5207C80B000EE0E6B /* UserCollectionViewCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B32D4207C80B000EE0E6B /* UserCollectionViewCellViewModelFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A73B3299207BFD5200EE0E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A73B3279207BFD5200EE0E6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A73B3280207BFD5200EE0E6B;
+			remoteInfo = CupidMatch;
+		};
+		A73B32A4207BFD5200EE0E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A73B3279207BFD5200EE0E6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A73B3280207BFD5200EE0E6B;
+			remoteInfo = CupidMatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A73B3281207BFD5200EE0E6B /* CupidMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupidMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73B3284207BFD5200EE0E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A73B3286207BFD5200EE0E6B /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		A73B3289207BFD5200EE0E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A73B328C207BFD5200EE0E6B /* CupidMatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CupidMatch.xcdatamodel; sourceTree = "<group>"; };
+		A73B328E207BFD5200EE0E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A73B3291207BFD5200EE0E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A73B3293207BFD5200EE0E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73B3298207BFD5200EE0E6B /* CupidMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupidMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73B329C207BFD5200EE0E6B /* CupidMatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupidMatchTests.swift; sourceTree = "<group>"; };
+		A73B329E207BFD5200EE0E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73B32A3207BFD5200EE0E6B /* CupidMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupidMatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73B32A7207BFD5200EE0E6B /* CupidMatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupidMatchUITests.swift; sourceTree = "<group>"; };
+		A73B32A9207BFD5200EE0E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73B32BC207C211900EE0E6B /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		A73B32BE207C24D800EE0E6B /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		A73B32C0207C257900EE0E6B /* CommandArgumentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandArgumentKey.swift; sourceTree = "<group>"; };
+		A73B32C2207C259500EE0E6B /* CommandKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandKey.swift; sourceTree = "<group>"; };
+		A73B32C4207C25DF00EE0E6B /* UserCollectionViewCellConfigurationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCellConfigurationCommand.swift; sourceTree = "<group>"; };
+		A73B32C8207C290500EE0E6B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A73B32CA207C295000EE0E6B /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		A73B32CC207C296A00EE0E6B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A73B32CE207C528000EE0E6B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A73B32D0207C7F2900EE0E6B /* CollectionViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		A73B32D2207C7F4F00EE0E6B /* CollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		A73B32D4207C80B000EE0E6B /* UserCollectionViewCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCellViewModelFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A73B327E207BFD5200EE0E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73B3295207BFD5200EE0E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73B32A0207BFD5200EE0E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A73B3278207BFD5100EE0E6B = {
+			isa = PBXGroup;
+			children = (
+				A73B3283207BFD5200EE0E6B /* CupidMatch */,
+				A73B329B207BFD5200EE0E6B /* CupidMatchTests */,
+				A73B32A6207BFD5200EE0E6B /* CupidMatchUITests */,
+				A73B3282207BFD5200EE0E6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A73B3282207BFD5200EE0E6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A73B3281207BFD5200EE0E6B /* CupidMatch.app */,
+				A73B3298207BFD5200EE0E6B /* CupidMatchTests.xctest */,
+				A73B32A3207BFD5200EE0E6B /* CupidMatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A73B3283207BFD5200EE0E6B /* CupidMatch */ = {
+			isa = PBXGroup;
+			children = (
+				A73B3284207BFD5200EE0E6B /* AppDelegate.swift */,
+				A73B32BB207BFDC300EE0E6B /* Models */,
+				A73B32BA207BFDBE00EE0E6B /* Views */,
+				A73B32B9207BFDBA00EE0E6B /* View Controllers */,
+				A73B32B8207BFDB600EE0E6B /* Commands */,
+				A73B32B7207BFDB100EE0E6B /* Factories */,
+				A73B32B6207BFDAD00EE0E6B /* Networking */,
+				A73B328E207BFD5200EE0E6B /* Assets.xcassets */,
+				A73B3293207BFD5200EE0E6B /* Info.plist */,
+				A73B328B207BFD5200EE0E6B /* CupidMatch.xcdatamodeld */,
+			);
+			path = CupidMatch;
+			sourceTree = "<group>";
+		};
+		A73B329B207BFD5200EE0E6B /* CupidMatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				A73B329C207BFD5200EE0E6B /* CupidMatchTests.swift */,
+				A73B329E207BFD5200EE0E6B /* Info.plist */,
+			);
+			path = CupidMatchTests;
+			sourceTree = "<group>";
+		};
+		A73B32A6207BFD5200EE0E6B /* CupidMatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A73B32A7207BFD5200EE0E6B /* CupidMatchUITests.swift */,
+				A73B32A9207BFD5200EE0E6B /* Info.plist */,
+			);
+			path = CupidMatchUITests;
+			sourceTree = "<group>";
+		};
+		A73B32B6207BFDAD00EE0E6B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A73B32CE207C528000EE0E6B /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A73B32B7207BFDB100EE0E6B /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A73B32D4207C80B000EE0E6B /* UserCollectionViewCellViewModelFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		A73B32B8207BFDB600EE0E6B /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				A73B32BE207C24D800EE0E6B /* Command.swift */,
+				A73B32C0207C257900EE0E6B /* CommandArgumentKey.swift */,
+				A73B32C2207C259500EE0E6B /* CommandKey.swift */,
+				A73B32C4207C25DF00EE0E6B /* UserCollectionViewCellConfigurationCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		A73B32B9207BFDBA00EE0E6B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A73B3286207BFD5200EE0E6B /* UsersViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A73B32BA207BFDBE00EE0E6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A73B3290207BFD5200EE0E6B /* LaunchScreen.storyboard */,
+				A73B3288207BFD5200EE0E6B /* Main.storyboard */,
+				A73B32BC207C211900EE0E6B /* UserCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A73B32BB207BFDC300EE0E6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A73B32C8207C290500EE0E6B /* User.swift */,
+				A73B32CA207C295000EE0E6B /* ProfileImage.swift */,
+				A73B32CC207C296A00EE0E6B /* Location.swift */,
+				A73B32D0207C7F2900EE0E6B /* CollectionViewCellViewModelProtocol.swift */,
+				A73B32D2207C7F4F00EE0E6B /* CollectionViewCellViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A73B3280207BFD5200EE0E6B /* CupidMatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A73B32AC207BFD5200EE0E6B /* Build configuration list for PBXNativeTarget "CupidMatch" */;
+			buildPhases = (
+				A73B327D207BFD5200EE0E6B /* Sources */,
+				A73B327E207BFD5200EE0E6B /* Frameworks */,
+				A73B327F207BFD5200EE0E6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CupidMatch;
+			productName = CupidMatch;
+			productReference = A73B3281207BFD5200EE0E6B /* CupidMatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A73B3297207BFD5200EE0E6B /* CupidMatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A73B32AF207BFD5200EE0E6B /* Build configuration list for PBXNativeTarget "CupidMatchTests" */;
+			buildPhases = (
+				A73B3294207BFD5200EE0E6B /* Sources */,
+				A73B3295207BFD5200EE0E6B /* Frameworks */,
+				A73B3296207BFD5200EE0E6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A73B329A207BFD5200EE0E6B /* PBXTargetDependency */,
+			);
+			name = CupidMatchTests;
+			productName = CupidMatchTests;
+			productReference = A73B3298207BFD5200EE0E6B /* CupidMatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A73B32A2207BFD5200EE0E6B /* CupidMatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A73B32B2207BFD5200EE0E6B /* Build configuration list for PBXNativeTarget "CupidMatchUITests" */;
+			buildPhases = (
+				A73B329F207BFD5200EE0E6B /* Sources */,
+				A73B32A0207BFD5200EE0E6B /* Frameworks */,
+				A73B32A1207BFD5200EE0E6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A73B32A5207BFD5200EE0E6B /* PBXTargetDependency */,
+			);
+			name = CupidMatchUITests;
+			productName = CupidMatchUITests;
+			productReference = A73B32A3207BFD5200EE0E6B /* CupidMatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A73B3279207BFD5200EE0E6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Joseph Ugowe";
+				TargetAttributes = {
+					A73B3280207BFD5200EE0E6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A73B3297207BFD5200EE0E6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A73B3280207BFD5200EE0E6B;
+					};
+					A73B32A2207BFD5200EE0E6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A73B3280207BFD5200EE0E6B;
+					};
+				};
+			};
+			buildConfigurationList = A73B327C207BFD5200EE0E6B /* Build configuration list for PBXProject "CupidMatch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A73B3278207BFD5100EE0E6B;
+			productRefGroup = A73B3282207BFD5200EE0E6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A73B3280207BFD5200EE0E6B /* CupidMatch */,
+				A73B3297207BFD5200EE0E6B /* CupidMatchTests */,
+				A73B32A2207BFD5200EE0E6B /* CupidMatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A73B327F207BFD5200EE0E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73B3292207BFD5200EE0E6B /* LaunchScreen.storyboard in Resources */,
+				A73B328F207BFD5200EE0E6B /* Assets.xcassets in Resources */,
+				A73B328A207BFD5200EE0E6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73B3296207BFD5200EE0E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73B32A1207BFD5200EE0E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A73B327D207BFD5200EE0E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73B32CF207C528000EE0E6B /* NetworkManager.swift in Sources */,
+				A73B32C5207C25DF00EE0E6B /* UserCollectionViewCellConfigurationCommand.swift in Sources */,
+				A73B32D5207C80B000EE0E6B /* UserCollectionViewCellViewModelFactory.swift in Sources */,
+				A73B32CD207C296A00EE0E6B /* Location.swift in Sources */,
+				A73B3287207BFD5200EE0E6B /* UsersViewController.swift in Sources */,
+				A73B32BD207C211A00EE0E6B /* UserCollectionViewCell.swift in Sources */,
+				A73B32CB207C295000EE0E6B /* ProfileImage.swift in Sources */,
+				A73B328D207BFD5200EE0E6B /* CupidMatch.xcdatamodeld in Sources */,
+				A73B32D3207C7F4F00EE0E6B /* CollectionViewCellViewModel.swift in Sources */,
+				A73B32BF207C24D800EE0E6B /* Command.swift in Sources */,
+				A73B32C9207C290500EE0E6B /* User.swift in Sources */,
+				A73B32C1207C257900EE0E6B /* CommandArgumentKey.swift in Sources */,
+				A73B32D1207C7F2900EE0E6B /* CollectionViewCellViewModelProtocol.swift in Sources */,
+				A73B32C3207C259500EE0E6B /* CommandKey.swift in Sources */,
+				A73B3285207BFD5200EE0E6B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73B3294207BFD5200EE0E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73B329D207BFD5200EE0E6B /* CupidMatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73B329F207BFD5200EE0E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73B32A8207BFD5200EE0E6B /* CupidMatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A73B329A207BFD5200EE0E6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A73B3280207BFD5200EE0E6B /* CupidMatch */;
+			targetProxy = A73B3299207BFD5200EE0E6B /* PBXContainerItemProxy */;
+		};
+		A73B32A5207BFD5200EE0E6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A73B3280207BFD5200EE0E6B /* CupidMatch */;
+			targetProxy = A73B32A4207BFD5200EE0E6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A73B3288207BFD5200EE0E6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A73B3289207BFD5200EE0E6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A73B3290207BFD5200EE0E6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A73B3291207BFD5200EE0E6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A73B32AA207BFD5200EE0E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A73B32AB207BFD5200EE0E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A73B32AD207BFD5200EE0E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
+				INFOPLIST_FILE = CupidMatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JEU.CupidMatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A73B32AE207BFD5200EE0E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
+				INFOPLIST_FILE = CupidMatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JEU.CupidMatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A73B32B0207BFD5200EE0E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
+				INFOPLIST_FILE = CupidMatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JEU.CupidMatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CupidMatch.app/CupidMatch";
+			};
+			name = Debug;
+		};
+		A73B32B1207BFD5200EE0E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
+				INFOPLIST_FILE = CupidMatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JEU.CupidMatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CupidMatch.app/CupidMatch";
+			};
+			name = Release;
+		};
+		A73B32B3207BFD5200EE0E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
+				INFOPLIST_FILE = CupidMatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JEU.CupidMatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CupidMatch;
+			};
+			name = Debug;
+		};
+		A73B32B4207BFD5200EE0E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
+				INFOPLIST_FILE = CupidMatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JEU.CupidMatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CupidMatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A73B327C207BFD5200EE0E6B /* Build configuration list for PBXProject "CupidMatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73B32AA207BFD5200EE0E6B /* Debug */,
+				A73B32AB207BFD5200EE0E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A73B32AC207BFD5200EE0E6B /* Build configuration list for PBXNativeTarget "CupidMatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73B32AD207BFD5200EE0E6B /* Debug */,
+				A73B32AE207BFD5200EE0E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A73B32AF207BFD5200EE0E6B /* Build configuration list for PBXNativeTarget "CupidMatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73B32B0207BFD5200EE0E6B /* Debug */,
+				A73B32B1207BFD5200EE0E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A73B32B2207BFD5200EE0E6B /* Build configuration list for PBXNativeTarget "CupidMatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73B32B3207BFD5200EE0E6B /* Debug */,
+				A73B32B4207BFD5200EE0E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A73B328B207BFD5200EE0E6B /* CupidMatch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A73B328C207BFD5200EE0E6B /* CupidMatch.xcdatamodel */,
+			);
+			currentVersion = A73B328C207BFD5200EE0E6B /* CupidMatch.xcdatamodel */;
+			path = CupidMatch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A73B3279207BFD5200EE0E6B /* Project object */;
+}
